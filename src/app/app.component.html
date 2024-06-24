@@ -1,0 +1,17 @@
+<main>
+  <h1>{{ title }}</h1>
+  <p>Congratulations! The app is running. 🎉</p>
+
+  <button (click)="showDummyModule = !showDummyModule">{{ showDummyModule ? 'Hide' : 'Show' }} Dummy Module</button>
+  <ng-container *ngIf="showDummyModule">
+    <dummy></dummy>
+  </ng-container>
+
+  <button (click)="showDummyStandalone = !showDummyStandalone">{{ showDummyStandalone ? 'Hide' : 'Show' }} Dummy Standalone</button>
+  <ng-container *ngIf="showDummyStandalone">
+    <dummy-standalone></dummy-standalone>
+  </ng-container>
+</main>
+
+
+<router-outlet />

@@ -1,7 +1,7 @@
 # AngularEsbuildExample
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
-It is a reproduction project for an issue occurring since the default angular builder is esbuild. The provider name is obfuscated in the stacktrace when a provider is injected by a component but not provided.
+It is a reproduction project for an issue occurring since the default angular builder is esbuild. The provider name is obfuscated in the stacktrace when a provider is injected by a component but not provided. (see the following issue: https://github.com/angular/angular-cli/issues/27919)
 
 ## Development server
 
